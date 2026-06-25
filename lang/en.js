@@ -211,7 +211,7 @@ module.exports = {
   dl_duration: "⏱ Duration:",
   dl_views: "👁 Views:",
   dl_quality: "📌 Quality:",
-  dl_downloaded_by: "Downloaded by Queen Riam",
+  dl_downloaded_by: "Downloaded by Taha khan",
   tts_no_text: "❌ Please provide the text for TTS conversion.",
   tts_error_gen: "❌ Error generating TTS audio.",
   tts_failed_send: "❌ Failed to send TTS audio.",
@@ -469,7 +469,7 @@ From: @{sender}`,
   chatbot_train_usage: `❌ Please provide training instructions.
 
 *Example:*
-\`.chatbot train You are Luna, a friendly AI assistant created by John.\``,
+\`.chatbot train You are Luna, a friendly AI assistant created by taha.\``,
   chatbot_train_success: `✅ *AI Training Updated!*
 
 📝 *New training:*
@@ -513,10 +513,10 @@ Start one with \`.trivia\``,
 
   // ── Pair ────────────────────────────────────────────────────────────────
   pair_owner_only: '❌ This command can only be used by the owner!',
-  pair_usage: '❌ Please provide a phone number.\n\nUsage: .pair <number>\nExample: .pair 233509977126',
+  pair_usage: '❌ Please provide a phone number.\n\nUsage: .pair <number>\nExample: .pair 923291489056',
   pair_invalid_number: '❌ Invalid phone number! Please use digits only (e.g. 233509977126)',
   pair_generating: '⏳ Generating pairing code for *{number}*...\nPlease wait a moment.',
-  pair_success: '🔗 *Pairing Code for {number}*\n\n╔══════════════╗\n║  *{code}*  ║\n╚══════════════╝\n\n📌 *Steps to link:*\n1. Open WhatsApp on phone *+{number}*\n2. Go to ⋮ → Linked Devices → Link a Device\n3. Tap *Link with phone number instead*\n4. Enter the code above\n\n⏰ Code expires in *3 minutes*.\n\n👑 Queen Riam',
+  pair_success: '🔗 *Pairing Code for {number}*\n\n╔══════════════╗\n║  *{code}*  ║\n╚══════════════╝\n\n📌 *Steps to link:*\n1. Open WhatsApp on phone *+{number}*\n2. Go to ⋮ → Linked Devices → Link a Device\n3. Tap *Link with phone number instead*\n4. Enter the code above\n\n⏰ Code expires in *3 minutes*.\n\n👑 taha khan',
   pair_failed: '❌ Failed to generate pairing code. Please try again.',
   pair_error: '❌ An error occurred while generating the pairing code.',
   pair_already_active: '⚠️ A pairing session for *{number}* is already in progress. Please wait.',
