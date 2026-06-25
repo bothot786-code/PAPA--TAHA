@@ -19,7 +19,7 @@ async function githubCommand(sock, chatId, message) {
         if (!res.ok) throw new Error('Error fetching repository data');
         const repo = await res.json();
 
-        let txt = `*🌹 Queen Riam Repository*\n\n`;
+        let txt = `*🌹 taha md  Repository*\n\n`;
         txt += `🔗 *URL:* ${repo.html_url}\n`;
         txt += `📝 *Description:* ${repo.description || "_No description provided_"}\n`;
         txt += `🌟 *Stars:* ${repo.stargazers_count}\n`;
@@ -28,13 +28,13 @@ async function githubCommand(sock, chatId, message) {
         txt += `📦 *Size:* ${(repo.size / 1024).toFixed(2)} MB\n`;
         txt += `📅 *Last Updated:* ${moment(repo.updated_at).format('DD/MM/YY - HH:mm:ss')}\n\n`;
         txt += `👨‍💻 *Developer:* ${repo.owner.login}\n\n`;
-        txt += `💥 *QUEEN RIAM*`;
+        txt += `💥 *TAHA KHAN*`;
 
         if (isButtonModeOn() && sendButtons) {
             try {
                 await sendButtons(sock, chatId, {
                     text: txt,
-                    footer: 'Queen Riam 👑',
+                    footer: 'taha khan 👑',
                     quoted: getFakeVcard(),
                     buttons: [
                         {
@@ -79,7 +79,7 @@ async function repoZipCommand(sock, chatId, message) {
             document: Buffer.from(response.data),
             mimetype: 'application/zip',
             fileName: 'Queen-Riam.zip',
-            caption: '📦 *Queen Riam* — Source Code\n\n⭐ Star the repo: https://github.com/Dev-Kango/Queen-Riam',
+            caption: '📦 *taha khan.* — Source Code\n\n⭐ Star the repo: https://github.com/Dev-Kango/Queen-Riam',
         }, { quoted: getFakeVcard() });
 
         await sock.sendMessage(chatId, { react: { text: '✅', key: message.key } });
