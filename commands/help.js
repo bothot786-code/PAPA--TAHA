@@ -98,7 +98,7 @@ function getHeader() {
     const uptimeFormatted = formatTime(process.uptime());
     const botMode = settings.commandMode === 'public' ? 'public' : 'private';
 
-    return `*『 👑 𝚀𝚄𝙴𝙴𝙽 𝚁𝙸𝙰𝙼 』*
+    return `*『 👑 TAHA KHAN 』*
 *│ 👤 ᴏᴡɴᴇʀ     : ${settings.botOwner}*
 *│ 🌍 ᴍᴏᴅᴇ      : [ ${botMode} ]*
 *│ ⏰ ᴛɪᴍᴇ      : ${currentTime}*
@@ -139,7 +139,7 @@ function buildFullMenu(sock) {
     for (const key of Object.keys(CATEGORIES)) {
         text += '\n' + buildCategoryText(key, sock) + '\n';
     }
-    text += '\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚀𝚄𝙴𝙴𝙽 𝚁𝙸𝙰𝙼*';
+    text += '\n> *© powered by taha khan*';
     return text;
 }
 
@@ -147,8 +147,8 @@ const channelCtx = {
     forwardingScore: 1,
     isForwarded: true,
     forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363404284793169@newsletter',
-        newsletterName: '👑 𝚀𝚄𝙴𝙴𝙽 𝚁𝙸𝙰𝙼',
+        newsletterJid: '120363407509133601@newsletter',
+        newsletterName: '👑 taha khan',
         serverMessageId: -1,
     },
 };
@@ -197,13 +197,13 @@ async function helpCommand(sock, chatId, message, _, subCategory) {
     const menuImage = loadMenuImage();
 
     if (subCategory && CATEGORIES[subCategory]) {
-        const catText = buildCategoryText(subCategory, sock) + '\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝚀𝚄𝙴𝙴𝙽 𝚁𝙸𝙰𝙼*';
+        const catText = buildCategoryText(subCategory, sock) + '\n\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ taha khan*';
 
         if (isButtonModeOn() && sendButtons) {
             try {
                 const opts = {
                     text: catText,
-                    footer: '© Queen Riam',
+                    footer: '© Taha khan',
                     buttons: [
                         { id: '.help', text: getLang(sock).help_back_btn },
                     ],
@@ -232,7 +232,7 @@ async function helpCommand(sock, chatId, message, _, subCategory) {
 
             const opts = {
                 text: menuText,
-                footer: '© Queen Riam',
+                footer: '© Taha khan',
                 buttons,
                 quoted: getFakeVcard(),
                 contextInfo: channelCtx,
