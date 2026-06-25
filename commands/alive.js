@@ -36,7 +36,7 @@ async function aliveCommand(sock, chatId, message) {
 
         const aliveMessage =
             `👋 \`\`\` ${greeting} \`\`\`\n\n` +
-            `_*${settings.botName || "Queen Riam"} ${t.alive_subtitle}*_\n\n` +
+            `_*${settings.botName || "taha khan"} ${t.alive_subtitle}*_\n\n` +
             `${t.alive_system_status}\n` +
             `> ${t.alive_version} ${settings.version}\n` +
             `> ${t.alive_memory} ${usedMemory}MB / ${totalMemory}GB\n` +
@@ -44,21 +44,21 @@ async function aliveCommand(sock, chatId, message) {
             `> ${t.alive_runtime} ${botUptime}\n` +
             `> ${platformEmoji} ${t.alive_platform} ${host}\n` +
             `> ${t.alive_node} ${nodeVersion}\n\n` +
-            `📢 Channel: https://whatsapp.com/channel/0029Va8YUl50bIdtVMYnYd0E\n\n` +
-            `*${settings.botName || "Queen Riam"} ${t.alive_online}*\n\n` +
-            `> ${t.alive_powered} ${settings.ownerName || "Héctor Manuel"} 👑`;
+            `📢 Channel: https://whatsapp.com/channel/0029Vb7lhr96buMEe8ShC42t\n\n` +
+            `*${settings.botName || "taha khan"} ${t.alive_online}*\n\n` +
+            `> ${t.alive_powered} ${settings.ownerName || "taha khan"} 👑`;
 
         if (isButtonModeOn()) {
             await sendButtonMessage(sock, chatId, {
                 text: aliveMessage,
-                footer: `${settings.botName || "Queen Riam"} 👑`,
+                footer: `${settings.botName || "taha khan"} 👑`,
                 buttons: [
                     { id: '.ping', text: t.alive_ping_btn },
                 ],
             }, message);
         } else {
             let imageBuffer;
-            const imagePath = path.resolve(__dirname, "../media/riam.jpg");
+            const imagePath = path.resolve(__dirname, "../media/https://i.imgur.com/1tUVG85.jpeg);
             try {
                 if (fs.existsSync(imagePath)) imageBuffer = fs.readFileSync(imagePath);
             } catch (_) {}
@@ -77,7 +77,7 @@ async function aliveCommand(sock, chatId, message) {
         const t = getLang(sock);
         const errMsg = t.alive_error.replace('{runtime}', runtime(process.uptime()));
         await sock.sendMessage(chatId, {
-            text: `🤖 *${settings.botName || "Queen Riam"} ${errMsg}*`
+            text: `🤖 *${settings.botName || "taha khan"} ${errMsg}*`
         }, { quoted: getFakeVcard() });
         await sock.sendMessage(chatId, { react: { text: "⚠️", key: message.key } });
     }
