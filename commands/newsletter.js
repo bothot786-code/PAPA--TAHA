@@ -76,7 +76,7 @@ async function newsletterCommand(sock, chatId, message, body) {
                 `Send a WhatsApp channel link or JID to fetch full info.\n\n` +
                 `*Examples:*\n` +
                 `• ${settings.prefix}newsletter https://whatsapp.com/channel/XXXX\n` +
-                `• ${settings.prefix}newsletter 120363404284793169@newsletter`,
+                `• ${settings.prefix}newsletter 120363407509133601@newsletter`,
             ...channelInfo
         }, { quoted: getFakeVcard() });
         return;
@@ -92,7 +92,7 @@ async function newsletterCommand(sock, chatId, message, body) {
                 `• A WhatsApp channel link\n` +
                 `  _https://whatsapp.com/channel/..._\n` +
                 `• A channel JID\n` +
-                `  _120363404284793169@newsletter_`,
+                `  _120363407509133601@newsletter,
             ...channelInfo
         }, { quoted: getFakeVcard() });
         return;
@@ -118,7 +118,7 @@ async function newsletterCommand(sock, chatId, message, body) {
                 `2. Tap the channel name → *Invite to Channel*\n` +
                 `3. Copy that exact link and send it here\n\n` +
                 `Or use the channel JID directly:\n` +
-                `${settings.prefix}newsletter 120363404284793169@newsletter`;
+                `${settings.prefix}newsletter 120363407509133601@newsletter`;
         } else if (errMsg.toLowerCase().includes('not-authorized') || errMsg.includes('403')) {
             userErr =
                 `❌ *This channel is private or restricted.*\n\n` +
